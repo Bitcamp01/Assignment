@@ -11,7 +11,7 @@ public class _1302 {
         sc.nextLine();
         for (int i = 0; i < cnt; i++) {
             String line = sc.nextLine();
-            map.put(line, map.getOrDefault(line, 1) + 1);
+            map.put(line, map.getOrDefault(line, 0) + 1);
         }
         // 최대값을 가진 엔트리 찾기
         int maxCount = Collections.max(map.values());

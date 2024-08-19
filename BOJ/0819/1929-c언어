@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+// 큰 정수를 다루기 위해 필요한 헤더 파일
+#include <stdlib.h>
+
+// factorial 함수를 구현합니다.
+unsigned long long factorial(int n) {
+    unsigned long long result = 1;
+    for (int i = 2; i <= n; i++) {
+        result *= i;
+    }
+    return result;
+}
+
+// 윌슨의 정리를 사용하여 소수 여부를 확인합니다.
+int is_prime_wilson(int n) {
+    if (n < 2) {
+        return 0;
+    }
+    unsigned long long fact = factorial(n - 1);
+    return (fact % n == n - 1);
+}
+
+// M 이상 N 이하의 소수를 찾습니다.
+void find_primes_wilson(int M, int N) {
+    for (int i = M; i <= N; i++) {
+        if (is_prime_wilson(i)) {
+            printf("%d\n", i);
+        }
+    }
+}
+
+int main() {
+    int M, N;
+
+    // 사용자로부터 입력을 받습니다.
+    scanf("%d %d", &M, &N);
+
+    // M 이상 N 이하의 소수를 출력합니다.
+    find_primes_wilson(M, N);
+
+    return 0;
+}

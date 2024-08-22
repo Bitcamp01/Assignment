@@ -9,7 +9,7 @@
 
 import java.util.Scanner;
 
-public class Main {  // 클래스 이름은 항상 대문자로 시작
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
@@ -20,24 +20,26 @@ public class Main {  // 클래스 이름은 항상 대문자로 시작
         }
 
         for (int i = 0; i < a - 1; i++) {
-            int choiceArr = i;  // 현재 선택한 인덱스를 저장
+            int choiceArr = i;
             for(int j = i + 1; j < a; j++) {
-                if(arr[j] < arr[choiceArr]) {  // 가장 작은 값을 찾기 위해 비교
+                if(arr[j] < arr[choiceArr]) {
                     choiceArr = j;
+
                 }
             }
 
-            // 최소값을 현재 위치의 값과 교환
             int temp = arr[choiceArr];
             arr[choiceArr] = arr[i];
             arr[i] = temp;
+            
         }
 
-        // 정렬된 배열 출력
         for (int i = 0; i < a; i++) {
             System.out.println(arr[i]);
+
         }
 
         sc.close();
+
     }
 }

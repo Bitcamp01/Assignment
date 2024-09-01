@@ -11,7 +11,7 @@
 <a href="https://github.com/Rurouni98" target="_blank">김병주</a> </br>
 <a href="https://github.com/dodotlm" target="_blank">마태림</a> </br>
 <a href="https://github.com/Have-Been" target="_blank">오유빈</a> </br>
-<a href="https://github.com/dydhyun" target="_blank">안용현</a> </br>
+<a href="https://github.com/crossjane" target="_blank">김화영</a> </br>
 <a href="https://github.com/csm0062" target="_blank">최수민</a> </br>
 <a href="https://github.com/ksp2222" target="_blank">김시표</a></br>
 <a href="https://github.com/seojaehawn" target="_blank">서재환</a></br></br>
